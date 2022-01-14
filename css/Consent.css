@@ -1,0 +1,45 @@
+section#content {
+	background-color: #F1E1CC;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+    margin-top: 80px;
+    padding: 0 2%;
+}
+div#video_wrapper {
+	z-index: 0;
+	width: 48vw;
+	height: 48vh;
+	margin: 0 auto;
+	padding: 10px;
+}
+#video_wrapper > iframe#video {
+	z-index: 0;
+    width: 100%;
+	height: 100%;
+	border: 0;
+	margin: 0 auto;
+}
+p#video_caption{
+	text-align: center;
+	font-size: 12px;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+h2#caption {
+    font-size: 30px;
+    text-align: center;
+    padding: 1% 0;
+    font-family: Roboto, Arial, sans-serif;
+}
+#information, #warning {
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    padding: 1% 2%;
+    text-align: justify;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+#warning {
+   font-size: 16px;
+}

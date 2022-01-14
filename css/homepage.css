@@ -3,92 +3,39 @@ body {
 	box-sizing: border-box;
 }
 a {
+	text-decoration: none;
 	color: white;
 }
-/*header*/
-header {
-	position: fixed;
-	top: 0;
-	display: flex;
-	margin: 0vw;
-	width: 100%;
-	height: 6vh;
-	/*do not put background color here, it will not work*/	
-}
-figure#logo {
-	background-color: #152238;
-	float:left;
-	margin: 0px;
-	width: 6%;
-	height: 5.5vw;
-	margin: 0px;
-	padding: 0px;
-}
-figure#logo img {
-	width: 5vw;
-	padding: 0.25vw;
-}
-#title {
-	background-color: #152238;
-	font-family: Roboto, Arial, sans-serif;
-	margin-top: 0px;
-	padding: 0px;
-	float: left;
-	width: 64%;
-	height: 5.5vw;
-}
-div#title h1 {
-	font-size: 4vw;
-	padding: 0.5vw;
-	margin: 0px;
-}
-nav {
-	background-color: #152238;
-	float: left;
-	width: 30%;
-	height: 5.5vw;
-	box-sizing: border-box;
-	margin: 0px;
-}
-nav p {
-	font-family: Roboto, Arial, sans-serif;
-	float: left;
-	text-align: right;
-	font-size: 2.5vw;
-	margin: 0px;
-	padding: 1.5vw;
+a:hover {
+	color: white;
+	text-decoration: underline;
 }
 /*content*/
-section {
+section#content {
+	align-items: center;
 	width: 100%;
-	height: 89vh;
-	padding: 10px;
-	margin: 5.5vh 0;
+	height: calc(100vh - 80px);
+	/*subtract 80px for the header to avoid overlapping*/
 	box-sizing: border-box;
 	background-image: url("../images/background.jpg");
-	background-position: center center;
+	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 100%, 100%;
-	background-color: black;
+	background-size: cover;
 }
 article p#caption {
 	font-family: "Open Sans", Arial, sans-serif;
 	text-align: center;
+	margin-top: 80px;
+	padding: 3%;
 	font-size: 40px;
-	height: 100%;
-	width: 80%;
-	margin: 4% 10%;
-	padding: 3px;
 }
 article p#additional_info {
 	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 22px;
 	text-align: center;
-	width: 80%;
-	margin: 2% 10%;
-	padding: 3px;
+	padding: 0 4% 1% 4%;
+	font-size: 24px;
 }
-aside p {
+p#redirect-container {
 	border: 3px solid white;
 	width: 70%;
 	text-align: center;
@@ -98,28 +45,61 @@ aside p {
 	font-size: 32px;
 	color: white;
 }
-/*footer*/
-footer {
-	position: fixed;
-	left: 0px;
-	bottom: 0px;
-	height: 5.5vh;
+/*organizations*/
+#section-organizations {
 	width: 100%;
+	background-color: #1C2D4A;
+	box-sizing: border-box;
+	padding-bottom: 5%;
 }
-span {
-	margin: 0px;
-	padding: 0px;
-	/*100%/2 (number of elements in the footer) = 50%*/
-	width: 50%;
-	height: 5.5vw;
-	float: left;
-	background-color: #152238;
-}
-span a {
-	font-family: "Open Sans", Arial, sans-serif;
-	font-size: 2vw;
-	display: block;
-	/*display: block makes the text-align work*/
+h2#org-caption {
+	font-family: Roboto, Arial, sans-serif;
 	text-align: center;
-	padding: 1.25vw;
+	padding-top: 3%;
+	font-size: 40px;
 }
+#section-organizations p {
+	font-family: "Open Sans", Arial, sans-serif;
+	text-align: center;
+	width: 60%;
+	margin: auto;
+	padding-bottom: 3%;
+	font-size: 20px;
+}
+div#organization {
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+	position: relative;
+}
+img#org-pic {
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+div#organization a {
+	background-color: white;
+	border-radius: 20px;
+	color: black;
+	padding: 10px;
+	font-size: 16px;
+	font-family: "Open Sans", Arial, sans-serif;
+}
+div#hide {
+	display: none;
+}
+div#organization:hover {
+	transform: scale(1.1);
+}
+/*will make the information about the orgs appear when you hover around the div*/
+div#organization:hover #hide {
+	display: block;
+	background-color: #273F68;
+	width: 50%;
+	padding: 1%;
+	margin: 5% auto;
+	border-radius: 10px;
+	position: absolute;
+	left: 25%;
+}
+
+

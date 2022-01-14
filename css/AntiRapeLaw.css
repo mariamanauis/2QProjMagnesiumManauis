@@ -1,0 +1,69 @@
+section#content {
+	background-color: #F1E1CC;
+    background-size: cover;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+    margin-top: 80px;
+}
+h1#caption {
+    font-size: 40px;
+    text-align: center;
+    padding: 1% 0;
+    font-family: Roboto, Arial, sans-serif;
+}
+article#history h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 2% 0;
+    font-family: Roboto, Arial, sans-serif;
+}
+article#history div {
+    width: 25%;
+    height: 25%;
+    background-color: #F9D0AF;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+article#history div#nineteen-thirties {
+    margin: 1% 3.125% 1% 6.25%;
+}
+article#history div#nineteen-ninties {
+    margin: 1% 3.125%;
+}
+article#history div#ninety-seven {
+    margin: 1% 5% 1% 3%;
+}
+article#history h3 {
+    font-size: 24px;
+    padding: 3% 0 0 3%;
+    font-family: Roboto, Arial, sans-serif;
+}
+article#history p {
+    font-size: 18px;
+    padding: 0 4% 1% 4%;
+}
+article#clauses h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 2% 0;
+    font-family: Roboto, Arial, sans-serif;
+}
+article#clauses div {
+    width: 90%;
+    margin: auto;
+    background-color: #F9D0AF;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+article#clauses div>h3 {
+    font-size: 24px;
+    text-align: center;
+    padding: 2% 1%;
+    font-family: Roboto, Arial, sans-serif;
+}
+article#clauses div>p {
+    font-size: 18px;
+    padding: 0 1% 2% 1%;
+    text-align: justify;
+}

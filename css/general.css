@@ -1,0 +1,146 @@
+/*header and navigation*/
+header {
+	position: fixed;
+	top: 0;
+	background-color: #152238;
+	display: flex;
+	width: 100%;
+	height: 80px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5%;
+	font-family: Roboto, Arial, sans-serif;
+	color: white;
+}
+header a {
+	text-decoration: none;
+	color: white;
+}
+header a:hover {
+	color: white;
+	text-decoration: underline;
+}
+h1#logo {
+	font-size: 30px;
+}
+header ul {
+	list-style-type: none;
+	display: flex;
+}
+header ul li {
+	padding: 10px 30px;
+	position: relative;
+}
+header ul li a {
+	text-decoration: none;
+	font-size: 20px;
+}
+header ul li a:hover {
+	color: white;
+	text-decoration: underline;
+	font-size: 20px;
+}
+div#dropdown-menu {
+	display: none;
+}
+header ul li:hover div#dropdown-menu {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background-color: #152238;
+}
+div#dropdown-menu ul {
+	display: block;
+	margin: 5px;
+}
+div#dropdown-menu ul li {
+	width: 130px;
+	padding: 5px;
+}
+/*footer*/
+footer a {
+	text-decoration: none;
+	color: white;
+}
+footer a:hover {
+	color: white;
+	text-decoration: underline;
+}
+footer div#footer-top {
+	background-color: #152238;
+	display: flex;
+	width: 100%;
+	height: 70px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 10%;
+	font-family: Roboto, Arial, sans-serif;
+}
+footer div#footer-bottom {
+	background-color: #111B2C;
+	display: flex;
+	width: 100%;
+	height: 70px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 5%;
+	color: white;
+}
+div#footer-top a {
+	font-size: 30px;
+}
+div#footer-bottom p {
+	font-size: 20px;
+}
+div#social-icons {
+	display: inline-block;
+}
+div#fb_sprite {
+	background: url('../images/social_icons.png') no-repeat -157px -11px;
+	width: 40px;
+	height: 40px;
+	border: none;
+	display: inline-block;
+	padding: 0 2%;
+}
+div#fb_sprite:hover{
+	background: url('../images/social_icons.png') no-repeat -157px -154px;
+	width: 40px;
+	height: 40px;
+	border: none;
+	display: inline-block;
+	padding: 0 2%;
+}
+div#twt_sprite {
+	background: url('../images/social_icons.png') no-repeat -109px -106px;
+	width: 40px;
+	height: 40px;
+	border: none;
+	display: inline-block;
+	padding: 0 2%;
+}
+div#twt_sprite:hover{
+	background: url('../images/social_icons.png') no-repeat -109px -249px;
+	width: 40px;
+	height: 40px;
+	border: none;
+	display: inline-block;
+	padding: 0 2%;
+}
+div#ig_sprite {
+	background: url('../images/social_icons.png') no-repeat -13px -58px;
+	width: 40px;
+	height: 40px;
+	border: none;
+	display: inline-block;
+	padding: 0 2%;
+}
+div#ig_sprite:hover{
+	background: url('../images/social_icons.png') no-repeat -13px -202px;
+	width: 40px;
+	height: 40px;
+	border: none;
+	display: inline-block;
+	padding: 0 2%;
+}
